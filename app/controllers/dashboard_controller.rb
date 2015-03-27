@@ -17,7 +17,6 @@ class DashboardController < ApplicationController
 	coll = db.collection("events")
 	Yajl::Parser.parse(js) do |event|
 		coll.insert(event)
-		break
 	end 
 
   end
