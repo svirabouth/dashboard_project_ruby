@@ -3,7 +3,7 @@ require 'zlib'
 require 'yajl'
 require 'mongo'
 require 'json'
-
+include Mongo
 class DashboardController < ApplicationController
   def index
   end
