@@ -2,6 +2,7 @@ require 'open-uri'
 require 'mongo'
 require 'json'
 require 'zlib'
+require 'yajl'
 include Mongo
 class DashboardController < ApplicationController
   def index
