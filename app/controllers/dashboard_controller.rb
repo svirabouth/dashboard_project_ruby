@@ -8,9 +8,9 @@ class DashboardController < ApplicationController
   
   def addEvent
     gz = open('http://data.githubarchive.org/2015-01-01-15.json.gz')
-   uri    = 'mongodb://test:test@ds045521.mongolab.com:45521/ruby_project'
+   uri    = 'mongodb://test:test@ds033617.mongolab.com:33617/dashboard_project'
 	client = MongoClient.from_uri(uri)
-	db     = client['ruby_project']
+	db     = client['dashboard_project']
 
   end
 
