@@ -8,7 +8,7 @@ class DashboardController < ApplicationController
   def index
   end
   
-  def addEvents
+  def addEvent
   	uri    = 'mongodb://test:test@ds0ds033617.mongolab.com:33617/dashboard_project'
 	client = MongoClient.from_uri(uri)
 	db     = client['dashboard_project']
