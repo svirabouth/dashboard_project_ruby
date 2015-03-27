@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
-gem 'open-uri'
-gem 'zlib'
+
 gem 'json'
 gem 'mongo'
 gem "yajl-ruby"
