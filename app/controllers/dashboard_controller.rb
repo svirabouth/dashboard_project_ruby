@@ -15,6 +15,10 @@ class DashboardController < ApplicationController
 	client = MongoClient.from_uri(uri)
 	db     = client['dashboard_project']
 	coll = db.collection("events")
+	Yajl::Parser.parse(js) do |event|
+		coll.insert(event)
+		break
+	end 
 
   end
 
