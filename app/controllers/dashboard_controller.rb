@@ -11,6 +11,7 @@ class DashboardController < ApplicationController
    uri    = 'mongodb://test:test@ds033617.mongolab.com:33617/dashboard_project'
 	client = MongoClient.from_uri(uri)
 	db     = client['dashboard_project']
+	coll = db.collection("events")
 
   end
 
